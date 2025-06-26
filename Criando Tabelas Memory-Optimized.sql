@@ -1,7 +1,7 @@
 /*********************************************************************
  Autor: Matheus Nunes Rossi
 
- Hands On:  Persistência dos Dados em Memory-Optimized Tables
+ Hands On:  PersistÃªncia dos Dados em Memory-Optimized Tables
 **********************************************************************/
 USE master
 go
@@ -27,7 +27,7 @@ go
 
 
 /*********************************************
- Criando tabela SEM persistência dos Dados
+ Criando tabela SEM persistÃªncia dos Dados
 **********************************************/
 DROP TABLE IF exists MemoryDB.dbo.Venda_Schema
 go
@@ -67,7 +67,7 @@ FROM MemoryDB.dbo.Venda_Schema  -- Zero linhas
 
 
 /*********************************************
- Criando tabela COM persistência dos Dados
+ Criando tabela COM persistÃªncia dos Dados
 **********************************************/
 DROP TABLE IF exists MemoryDB.dbo.Venda_Data
 go
@@ -108,7 +108,7 @@ SELECT b.[name] as Tabela, a.*
 FROM MemoryDB.sys.dm_db_xtp_table_memory_stats a
 JOIN MemoryDB.sys.tables b ON a.[object_id] = b.[object_id]
 
--- Estatísticas de uso dos índices em tabelas Memory-Optimized
+-- EstatÃ­sticas de uso dos Ã­ndices em tabelas Memory-Optimized
 SELECT b.[name] as Tabela, c.[name] as Indices,a.*
 FROM MemoryDB.sys.dm_db_xtp_index_stats a
 JOIN MemoryDB.sys.tables b ON a.[object_id] = b.[object_id]
