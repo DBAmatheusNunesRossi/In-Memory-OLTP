@@ -39,8 +39,8 @@ FROM dbo.Venda_old
 
 /***************************************************************
  Hash Bucket
- - Tamanho do Ìndice hash est· relacionado ao valor do Bucket!
- - [Tamanho do Ìdice] = 8 * [bucket count] (Bytes)
+ - Tamanho do √≠ndice hash est√° relacionado ao valor do Bucket!
+ - [Tamanho do √≠dice] = 8 * [bucket count] (Bytes)
  - Recomendado ter de 1x a 2x a quantidade de valores distintos.
 ****************************************************************/
 -- Valor ideal
